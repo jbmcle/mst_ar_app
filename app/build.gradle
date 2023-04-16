@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "33.0.2"
+    defaultConfig {
+        applicationId "com.example.ar_final"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    compileOptions(){
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+}
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+
+sceneform.asset('3d models/pistol_grip_pump_shotgun.obj',
+        'default',
+        '3d models/pistol_grip_pump_shotgun.sfa',
+        'src/main/res/raw/pistol_grip_pump_shotgun')
+
+sceneform.asset('3d models/animated_drone_with_camera_free.glb',
+        'default',
+        '3d models/animated_drone_with_camera_free.sfa',
+        'src/main/res/raw/animated_drone_with_camera_free')
+
+sceneform.asset('3d models/canon_eos_5d_mark_iv.glb',
+        'default',
+        '3d models/canon_eos_5d_mark_iv.sfa',
+        'src/main/res/raw/canon_eos_5d_mark_iv')
+
+sceneform.asset('3d models/canon_eos_5d_mark_iv.glb',
+        'default',
+        '3d models/canon_eos_5d_mark_iv.sfa',
+        'src/main/assets/canon_eos_5d_mark_iv')
+
+sceneform.asset('3d models/hw_xyz_detailing.glb',
+        'default',
+        '3d models/hw_xyz_detailing.sfa',
+        'src/main/res/raw/hw_xyz_detailing')

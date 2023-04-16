@@ -1,0 +1,101 @@
+{
+  materials: [
+    {
+      name: 'DSLR',
+      parameters: [
+        {
+          baseColorFactor: null,
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          diffuseColor: '85c7bb74ad8e3400ae43571deb1700a8e63547c5',
+        },
+        {
+          normal: '73ddef947e3bbbbf6a319550553cc1cd64d2b0ee',
+        },
+        {
+          metallicFactor: null,
+        },
+        {
+          roughnessFactor: null,
+        },
+        {
+          specularFactor: [
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          glossinessFactor: 1,
+        },
+        {
+          specularGlossiness: '2c07858cc303fc7ba37e5a29f1a3933386abd18e',
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: '3d models/canon_eos_5d_mark_iv.glb',
+    name: 'canon_eos_5d_mark_iv',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      name: '85c7bb74ad8e3400ae43571deb1700a8e63547c5',
+      pipeline_name: '*1',
+    },
+    {
+      name: '2c07858cc303fc7ba37e5a29f1a3933386abd18e',
+      pipeline_name: '*2',
+    },
+    {
+      name: '73ddef947e3bbbbf6a319550553cc1cd64d2b0ee',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: '*0',
+    },
+  ],
+  version: '0.54:2',
+}
